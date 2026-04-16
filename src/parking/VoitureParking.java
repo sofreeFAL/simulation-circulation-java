@@ -21,11 +21,16 @@ public class VoitureParking extends Thread {
     public void run() {
         try {
             parking.entrer(id, porteEntree);
+
+            Utils.log("[INFO] La voiture " + id +
+                    " est stationnée pendant " + dureeStationnement + " ms.");
             Utils.sleep(dureeStationnement);
+
             parking.sortir(id, porteSortie);
         } catch (InterruptedException e) {
             interrupt();
-            Utils.log("Voiture " + id + " interrompue dans le parking.");
+            Utils.log("[ERREUR] La voiture " + id +
+                    " a été interrompue pendant son passage dans le parking.");
         }
     }
 }

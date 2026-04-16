@@ -423,7 +423,7 @@ public class SimulationFrame extends JFrame {
         Utils.log("[INFO] Capacité du parking : " + capacite + " place(s).");
         Utils.log("[INFO] Nombre de portes : " + nbPortes + ".");
 
-        Parking parking = new Parking(capacite);
+        Parking parking = new Parking(capacite, nbPortes);
         List<Thread> voitures = new ArrayList<>();
 
         for (int i = 1; i <= n; i++) {
