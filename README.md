@@ -88,7 +88,7 @@ SimulationCirculation/
 
 ```bash
 # 1. Cloner le repository
-git clone https://github.com/votre-username/SimulationCirculation.git
+git clone https://github.com/sofreeFAL/simulation-circulation-java.git
 
 # 2. Se déplacer dans le dossier
 cd SimulationCirculation
